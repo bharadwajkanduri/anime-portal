@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+:root{
+  --theme-base: #FFB300;
+  --theme-accent: #FF6F00;
+  --theme-glow: #FFD54F;
+  --theme-gradient: radial-gradient(circle at 20% 10%, #FFD54F22, transparent 40%), linear-gradient(135deg, #FFB30022, #FF6F0022);
+}
+
+html,body,#__next { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--theme-gradient);
+  color: #fff;
+}
+
+/* Tailwind base import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simple helper styles used in scaffold */
+.card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 16px; }
+.button { background: var(--theme-accent); color: white; padding: 8px 12px; border-radius: 8px; }
